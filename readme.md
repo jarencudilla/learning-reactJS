@@ -9,13 +9,17 @@ I plan to allot at least 2 hours a day learning ReactJS on top of what I am doin
 
 ## Day 1
 
-Prepare the devices I am going to use to learn ReactJS.
-Enable WSL2 on (Windows)
-Install Ubuntu (Windows)
-Install VScode (Windows + Mac)
-Check if I need to install Node
+- [x] Enable WSL2 on (Windows)
+- [x] Install Ubuntu  (Windows)
 
-Start a repo "Learning ReactJS" where I can store my learnings and test apps.
+Install VScode
+
+- [x] (Windows)  
+- [x] (Mac)
+
+Followed this Gist on how to setup the Dev Env in Mac https://gist.github.com/nbantatua/3162e7f4ab6217cddbb24ce6be908451
+
+- [x]Start a repo "Learning ReactJS" where I can store my learnings and test apps.
 
 Following sites as reference :
 reactjs.org
