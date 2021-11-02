@@ -19,7 +19,7 @@ Install VScode
 
 Followed this Gist on how to setup the Dev Env in Mac https://gist.github.com/nbantatua/3162e7f4ab6217cddbb24ce6be908451
 
-- [x]Start a repo "Learning ReactJS" where I can store my learnings and test apps.
+- [x] Start a repo "Learning ReactJS" where I can store my learnings and test apps.
 
 Following sites as reference :
 reactjs.org
