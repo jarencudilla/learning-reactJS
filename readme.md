@@ -1,6 +1,6 @@
-## Realization - I don't know ReactJS
-# Feedback - I need to learn ReactJS
-# Call to Action : 
+# Realization - I don't know ReactJS
+## Feedback - I need to learn ReactJS
+## Call to Action : 
 
 Generate a 7 day plan to learn ReactJS
 Target : Have a basic working knowledge of ReactJS to be able to code simple apps, get proficient, gain more experience to be able to handle more complex tasks/apps. 
