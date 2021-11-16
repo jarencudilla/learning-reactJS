@@ -37,13 +37,11 @@ Watch traverse media / web dev simplified vids on react follow along with the co
 
 ## Day 3
 
-- Function and Class components
-- How to handle events
+- Rendering Elements
 
 ## Day 4
 
-- Conditions
-- Conditional rendering
+- Rendering Components
 
 ## Day 5
 
