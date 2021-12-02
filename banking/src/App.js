@@ -3,7 +3,9 @@ import React, {useState} from 'react'
 const App = () => {
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
+  const [id, setId] = useState(-1)
   const [listNames, setListNames] = useState([])
+  const [status, setStatus] = useState('add')
   
   const handleSave = () => {
     setListNames([...listNames, { firstName, lastName}])
@@ -32,7 +34,9 @@ const App = () => {
       <button onClick={handleSave}>Save</button>
       <br />
       <ul>
-        {listNames.map}  
+        {listNames.map((name) => (
+          <li
+        )}  
       </ul>    
 
     </div>
