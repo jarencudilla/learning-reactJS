@@ -11,9 +11,22 @@ const App = () => {
     setListNames([...listNames, { firstName, lastName}])
   }
 
-  const handleEdit
-  
+  const handleSave = () => {
+    if 
 
+  }
+  
+ const handleEdit = (val) => {
+   const {id, firstName, lastName} = val
+   setFirstName(firstName)
+   setLastName(lastName)
+   setId(id)
+   setStatus('edit')
+ }
+
+ const handleDelete = (id) => {
+   setListNames
+ }
 
   return (
     <div>
