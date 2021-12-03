@@ -52,14 +52,14 @@ const App = () => {
     <div>
       <div>
         <div>{status}</div>
-        <label>first name</label>  
+        <label>First Name</label>  
         <input type='text' value={firstName} onChange={(e) => {
           const {value} = e.target
           setFirstName(value)
         }} />
       </div>
       <div>
-        <label>last name</label>  
+        <label>Last Name</label>  
         <input type='text' value={lastName} onChange={e => {
           const {value} = e.target
           setLastName(value)
