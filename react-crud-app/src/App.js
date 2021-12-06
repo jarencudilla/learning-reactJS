@@ -63,10 +63,10 @@ const App = () => {
     const { value } = event.target
 
     setSearchKeyword(value)
-    const filteredNames = listNames.filter((name) => {
-      return name.firstName.toLowerCase().includes(value.toLowerCase())
-    })
-    setFilteredListNames(filteredNames)
+    // const filteredNames = listNames.filter((name) => {
+    //   return name.firstName.toLowerCase().includes(value.toLowerCase())
+    // })
+    // setFilteredListNames(filteredNames)
   }
 
   return (
@@ -104,7 +104,8 @@ const App = () => {
       </div>
 
       <ListNamesComponent
-        names={searchKeyword === '' ? listNames : filteredListNames}
+        names={listNames}
+        searchKeyword={searchKeyword}
         onEdit={handleEdit}
         onDelete={handleDelete}
       />

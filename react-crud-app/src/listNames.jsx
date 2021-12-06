@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ListNamesComponent = ({ names = [], onEdit, onDelete }) => {
+const ListNamesComponent = ({ names = [], searchKeyword = '', onEdit, onDelete }) => {
   const [filteredNames, setfilteredNames] = useState(names)
 
   useEffect(() => {
