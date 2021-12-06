@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import ListNamesComponent from './ListNames'
+import ListNamesComponent from './listNames'
 
 let uid = -1
 const App = () => {
