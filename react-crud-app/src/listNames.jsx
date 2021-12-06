@@ -1,11 +1,25 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
-const ListNamesComponent = ({ names = [], searchKeyword = '', onEdit, onDelete }) => {
+const ListNamesComponent = ({ 
+  names = [],
+  searchKeyword = '',
+  onEdit,
+  onDelete
+}) => {
   const [filteredNames, setfilteredNames] = useState(names)
 
   useEffect(() => {
-    setfilteredNames(names)
-  }, [names])
+    if (searchKeyword === '') {
+      setfilteredNames(names)
+    } else {
+      setfilteredNames(
+        names.filter((name) => {
+          return name.firstName.toLowerCase().includes(searchKeyword.toLowerCase())
+        })
+      )
+    }
+  
+    }, [names, searchKeyword])
   
   return (
     <ul>
