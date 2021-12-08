@@ -1,7 +1,7 @@
-import React,  {useEffect, useState } From "react";
+import React,  {useEffect, useState } from "react";
 
 export default function App() {
-  const [secondsLeft, setSecondsLeft] = useState(25 * 60);
+  const [secondsLeft, setSecondsLeft] = useState(5 * 60);
   const [timer, setTimer] = useState();
 
   const start = () => {
@@ -13,6 +13,15 @@ export default function App() {
     }, 1000);
     setTimer(timer);
   };
+
+  const stop = () => {
+      
+    };
+  
+  const reset = () => {
+      
+    };
+
 
   useEffect(() => {
     if (secondsLeft === 0) {
@@ -26,11 +35,11 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Pomodoro Timer</h1>
-      <button onClick={start}>start</button>
+      <h1>Pomodoro</h1>
+      <button onClick={start}>Start</button>
+      <button onClick={stop}>Stop</button>
+      <button onClick={reset}>Reset</button>
       <div>{secondsLeft} seconds left</div>
     </div>
   );
 }
-
-export default App;
