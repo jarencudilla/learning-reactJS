@@ -1,6 +1,8 @@
 import React,  {useEffect, useState } from "react";
 
 export default function App() {
+  const [sessionTimer, setsessionTimer] = useState(25 * 60);
+  const [breakTimer, setbreakTimer] = useState(5 * 60);
   const [secondsLeft, setSecondsLeft] = useState(5 * 60);
   const [timer, setTimer] = useState();
 
