@@ -1,11 +1,11 @@
 import React, { useMemo, useState } from "react";
 
-function App() {
-  return (
-    <div className="App">
-  
-    </div>
-  );
-}
+export default function App() {
+  const [board, setBoard] = useState([[], [], []]);
+  const restart = () => {
+    setBoard([[], [], []]);
+  };
 
-export default App;
+
+
+}
