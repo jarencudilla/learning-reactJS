@@ -1,7 +1,4 @@
 import React, { useState } from 'react'
-import Board from './board'
-import Message from './message'
-import Refresh from './refresh'
 
 // game board
 // 0 1 2
@@ -21,7 +18,7 @@ import Refresh from './refresh'
 // 0 4 8
 // 2 4 6
 
-const isWinner = (board) => {
+const hasWinner = (board) => {
   
     const lines = [
         [0, 1, 2],
@@ -34,7 +31,7 @@ const isWinner = (board) => {
         [2, 4, 6],
     ];
 
-    for(let i=0, i < lines.length; i++) {
+    for(let i=0; i < lines.length; i++) {
       let [a, b, c] = lines[i];
       if (board[a] !== "" && board[a] === board[b] && board[b] === board[c]) {
           return true;
