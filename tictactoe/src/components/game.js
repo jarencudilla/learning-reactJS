@@ -21,7 +21,7 @@ import Refresh from './refresh'
 // 0 4 8
 // 2 4 6
 
-const isWon = (board) => {
+const isWinner = (board) => {
   
     const lines = [
         [0, 1, 2],
@@ -33,3 +33,12 @@ const isWon = (board) => {
         [0, 4, 8],
         [2, 4, 6],
     ];
+
+    for(let i=0, i < lines.length; i++) {
+      let [a, b, c] = lines[i];
+      if (board[a] !== "" && board[a] === board[b] && board[b] === board[c]) {
+          return true;
+      }
+    }
+    return false;
+  }
