@@ -105,7 +105,7 @@ const App = () => {
         />
       </div>
       <div>
-        <label>last name</label>
+        <label>Last Name</label>
         <input
           type='text'
           value={lastName}
@@ -115,7 +115,8 @@ const App = () => {
           }}
         />
       </div>
-      <button onClick={handleSave}>Save</button>
+      <button onClick={}>Add 1 Person</button>
+      <button onClick={}>Fetch</button>
       <br />
       <br />
       <br />
