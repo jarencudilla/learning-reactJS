@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import Refreshboard from './refreshboard'
+import Board from './board'
+import refreshBoard from './refreshboard'
 
 // game board
 // 0 1 2
@@ -40,3 +41,11 @@ const hasWinner = (board) => {
     }
     return false;
   }
+
+  const Game = () => {
+    const [board, setBoard] = useState(Array(9).fill(""));
+    const [hasPlayer, setHasPlayer] = useState("X"); 
+
+  }
+
+  export default Game

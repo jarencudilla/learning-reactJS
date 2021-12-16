@@ -8,6 +8,6 @@ const style = {
 	fontWeight: "800",
 };
 
-const Refresh = (props) => <button name={"btn"} style={style} onClick={props.onClick}>{props.value}</button>
+const refreshBoard = (props) => <button name={"btn"} style={style} onClick={props.onClick}>{props.value}</button>
 
-export default Refresh
+export default refreshBoard
