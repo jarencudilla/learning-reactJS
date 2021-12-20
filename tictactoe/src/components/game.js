@@ -44,7 +44,8 @@ const hasWinner = (board) => {
 
   const Game = () => {
     const [board, setBoard] = useState(Array(9).fill(""));
-    const [hasPlayer, setHasPlayer] = useState("X"); 
+    const [hasPlayer, setHasPlayer] = useState("X");
+    const [message, setMessage] = useState("Click to start"); 
 
   }
 
