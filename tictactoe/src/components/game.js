@@ -49,4 +49,9 @@ const hasWinner = (board) => {
 
   }
 
-  export default Game
+  const handleInput = (pos) => {    
+    if (isPlayer === "" || board[pos] !== "") {
+        return;
+    }
+
+export default Game
