@@ -47,6 +47,10 @@ const hasWinner = (board) => {
     const [hasPlayer, setHasPlayer] = useState("X");
     const [message, setMessage] = useState("Click to start"); 
 
+  const refresh  = () => {
+    setBoard(Array(9).fill("")); 
+    setMessage("Click to start");
+    setIsPlayer("X");  
   }
 
   const handleInput = (pos) => {    
@@ -66,14 +70,22 @@ const hasWinner = (board) => {
         }
 
         if (boardCopy.indexOf("")=== -1){
-            // if no more moves game is draw
             setMessage("DRAW")
             setHasPlayer("");
         } else {
             let nextPlayer = (hasPlayer === "X") ? "O" : "X"
-            setHasPlayer(nextPlayer); // updating player
+            setHasPlayer(nextPlayer); 
             setMessage(`TURN: ${nextPlayer}`)
         }
     }
+
+    return (
+    <div>
+      <Message value={message} />
+     <Board onClick={handleInput} value={board} /> 
+     <Refresh onClick={refresh} value={'Refresh'} />
+ </div>
+ )
+}
 
 export default Game
