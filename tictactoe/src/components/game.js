@@ -50,8 +50,30 @@ const hasWinner = (board) => {
   }
 
   const handleInput = (pos) => {    
-    if (isPlayer === "" || board[pos] !== "") {
+    if (hasPlayer === "" || board[pos] !== "") {
         return;
+    }
+
+    const boardCopy = [...board];
+        boardCopy[pos] = hasPlayer;
+        setBoard(boardCopy); 
+        
+
+        if (hasWinner(boardCopy)){
+            setMessage(`WON: ${hasPlayer}`)
+            setHasPlayer("");
+            return;
+        }
+
+        if (boardCopy.indexOf("")=== -1){
+            // if no more moves game is draw
+            setMessage("DRAW")
+            setHasPlayer("");
+        } else {
+            let nextPlayer = (hasPlayer === "X") ? "O" : "X"
+            setHasPlayer(nextPlayer); // updating player
+            setMessage(`TURN: ${nextPlayer}`)
+        }
     }
 
 export default Game
