@@ -93,8 +93,8 @@ const App = () => {
   return (
     <div>
       <div>
-        <div>{status}</div>
-        <label>first name</label>
+        {/* <div>{status}</div> */}
+        <label>First Name</label>
         <input
           type='text'
           value={firstName}
