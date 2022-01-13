@@ -60,4 +60,6 @@ Time to put my learnings to good use by making a simple App
 - calculator
 - Remake my tictactoe game to ReactJS app
 
-## Even though I did a 7 day Learn ReactJS plan, I still have not learned much to be confident, I still continue to code after I completed this plan. There's no way to learn everything in coding in just 7 days. Learning and practice is constant. 
+## Afterwards
+
+Even though I did a 7 day Learn ReactJS plan, I still have not learned much to be confident, I continued to code after I completed this plan. There's no way to learn everything in coding in just 7 days. Learning and practice is constant. 
